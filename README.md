@@ -27,7 +27,7 @@ Este es un proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) en Java para ges
    - Modifica las siguientes líneas con los detalles de tu base de datos:
 
      ```
-     conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1/nombre-de-base-de-datos?serverTimezone=GMT-5","root","");
+     conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1/crudpollo?serverTimezone=GMT-5","root","");
      ```
 
 ## Uso
