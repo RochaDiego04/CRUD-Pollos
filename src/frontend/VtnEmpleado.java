@@ -749,7 +749,7 @@ public class VtnEmpleado extends javax.swing.JFrame {
         if(modeloEmpleado.getRowCount()!= 0)
             tbl_Empleado.setModel(modeloEmpleado);
         else
-            JOptionPane.showMessageDialog(this, "Cliente no se encuentra en la base de datos");
+            JOptionPane.showMessageDialog(this, "Empleado no se encuentra en la base de datos");
         
         objBd.cerrar_conexion();
         limpiar_cajas();
