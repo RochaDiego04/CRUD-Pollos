@@ -6,7 +6,7 @@ Este es un proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) en Java para ges
 
 - Java Development Kit (JDK) 18 instalado
 - [mysql-connector-java.jar](https://dev.mysql.com/downloads/connector/j/) para la conexión con la base de datos.
-- Base de datos en phpMyAdmin con las siguientes credenciales:
+- Login de página de inicio al ejecutar la aplicación:
   - Usuario: pollo
   - Contraseña: 1234
 
@@ -23,13 +23,11 @@ Este es un proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) en Java para ges
 5. Abre el proyecto en tu IDE de preferencia.
 
 6. Configura la conexión a la base de datos:
-   - Abre el archivo DatabaseConnection.java ubicado en src/main/java/com/tu_paquete/database/.
+   - Abre el archivo DatabaseConnection.java ubicado en rudPollos\build\classes\basedatos\BD.
    - Modifica las siguientes líneas con los detalles de tu base de datos:
 
      ```
-     String url = "jdbc:mysql://localhost:3306/nombre_base_de_datos";
-     String user = "pollo";
-     String password = "1234";
+     conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1/nombre-de-base-de-datos?serverTimezone=GMT-5","root","");
      ```
 
 ## Uso
