@@ -1,6 +1,6 @@
 # CRUD de Pollería en Java
 
-Este es un proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) en Java para gestionar información de clientes y empleados relacionada con un negocio de pollos, desarrollado con el Modelo-Vista-controlador.
+Este es un proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) en Java para gestionar información de clientes y empleados relacionada con un negocio de pollos, desarrollado con el modelo de 3 capas (frontend, backend y bd).
 
 ## Requisitos previos
 
