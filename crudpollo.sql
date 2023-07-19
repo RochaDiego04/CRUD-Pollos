@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-11-2022 a las 02:51:52
+-- Tiempo de generación: 19-07-2023 a las 11:06:21
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -42,9 +42,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`Nombre`, `Apellido`, `Email`, `Edad`, `Telefono`, `Codigo`, `Sexo`) VALUES
-('diego', 'cocca', 'diegococcin@yahoo.com', 23, '3321342434', '124', 'Masculino'),
-('Graciela', 'Luna', 'valdo@gmail.com', 56, '3323245655', '125', 'Femenino'),
-('memo', 'erhard', 'memo@gmail.com', 18, '3435353535', '126', 'Femenino');
+('Mario', 'Ramirez', 'rami03@gmail.com', 34, '3321897654', '140', 'Masculino');
 
 -- --------------------------------------------------------
 
@@ -62,8 +60,19 @@ CREATE TABLE `empleado` (
   `HorasPorMes` double NOT NULL,
   `PagoPorHora` double NOT NULL,
   `Codigo` varchar(20) NOT NULL,
-  `Puesto` varchar(30) NOT NULL
+  `Puesto` varchar(30) NOT NULL,
+  `Sueldo` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `empleado`
+--
+
+INSERT INTO `empleado` (`Nombre`, `Apellido`, `Email`, `Edad`, `Telefono`, `Sexo`, `HorasPorMes`, `PagoPorHora`, `Codigo`, `Puesto`, `Sueldo`) VALUES
+('Miguel', 'Erhard', 'erhmem@gmail.com', 19, '3329018394', 'Masculino', 112, 30, '100', 'Intendente', 2822.4),
+('Alan', 'Madrigal', 'alana@gmail.com', 20, '3345983098', 'Masculino', 90, 100, '101', 'Supervisor', 9000),
+('juanita', 'Perez', 'juanito@gmail.com', 20, '123456', 'Femenino', 200, 100, '107', 'Cajero', 16800),
+('aa', 'bb', 'cc', 34, '123456', 'Masculino', 500, 100, '106', 'cajero', 42000);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
